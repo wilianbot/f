@@ -1,13 +1,21 @@
-{
-    var respostaDeTudo = 3.14
-    let idade = 42
-    const pi = 29
-    console.log(respostaDeTudo, idade, pi)
-
-}
-
-var respostaDeTudo = 42
-let idade = 29
-const pi = 3.14
-
-console.log(respostaDeTudo, idade, pi)
+const acesso = (nome) => {
+    return `${nome} logou com sucesso no sistema!`
+  }
+  
+  const usuarioLogin = (nome) => {
+    let array = []
+    for( i = 0; i < 90000; i++){
+        array.push(i)
+    }
+    return acesso(nome)
+  }
+  
+  const diretoriaLogin = (nome) => {
+    let array = []
+    for( i = 0; i < 900000; i++){
+        array.push(i)
+    }
+    return acesso(nome)
+  }
+  
+ console.log(diretoriaLogin("Wilian"));
